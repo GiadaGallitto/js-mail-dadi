@@ -23,11 +23,11 @@ button.addEventListener("click", function(){
     const userRandomNumber = parseInt(Math.floor(Math.random() * 6));
 
     if(computerRandomNumber > userRandomNumber){
-        document.getElementById("output").innerHTML = `AHAHAH Ho vinto io!`
+        document.getElementById("output").innerHTML = `Il mio numero è ${computerRandomNumber}, il tuo invece è ${userRandomNumber} AHAHAH Ho vinto io!`
     } else if (userRandomNumber > computerRandomNumber){
-        document.getElementById("output").innerHTML = `Hai vinto tu ma secondo me hai barato`
+        document.getElementById("output").innerHTML = `Il mio numero è ${computerRandomNumber}, il tuo invece è ${userRandomNumber}, hai vinto tu ma secondo me hai barato`
     } else if (computerRandomNumber === userRandomNumber){
-        document.getElementById("output").innerHTML = `A sto giro siamo pari`
+        document.getElementById("output").innerHTML = `Il mio numero è ${computerRandomNumber}, il tuo invece è ${userRandomNumber}, a sto giro siamo pari`
     }
 
     console.log(computerRandomNumber, userRandomNumber);
