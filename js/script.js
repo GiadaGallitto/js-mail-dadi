@@ -14,8 +14,11 @@
 
 // -se il valore del numero del computer è minore di quello del giocatore, apparirà un messaggio in cui dico che ha vinto lui;
 
-const button = document.querySelector("div.buttons .btn");
 
+
+// GIOCO DEI DADI
+
+const button = document.querySelector("div.buttons .btn");
 
 button.addEventListener("click", function(){
     const computerRandomNumber = parseInt(Math.floor(Math.random() * 6));
@@ -32,3 +35,17 @@ button.addEventListener("click", function(){
 
     console.log(computerRandomNumber, userRandomNumber);
 })
+
+
+MAIL
+
+-Creo un array con una lista di circa 4 mail diverse
+-Chiedo tramite un input email, l'indirizzo email dell'utente
+-Creo un a come button e un pre come output dove apparirà il risultato
+-Richiamo il valore dell'input come un elemento di una variabile
+-Richiamo l'elemento a.btn
+
+Quando l'utente clicca
+-Creo un addEventListener dove:
+    -Se l'email è presente nell'array, allora dichiaro che può accedere;
+    -Se non è presente dichiaro che non può accedere;
