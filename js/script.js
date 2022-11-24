@@ -18,9 +18,9 @@
 
 // GIOCO DEI DADI
 
-const button = document.querySelector("div.buttons .btn");
+const buttonGame = document.querySelector("div.buttons-game .btn");
 
-button.addEventListener("click", function(){
+buttonGame.addEventListener("click", function(){
     const computerRandomNumber = parseInt(Math.floor(Math.random() * 6));
 
     const userRandomNumber = parseInt(Math.floor(Math.random() * 6));
@@ -37,15 +37,19 @@ button.addEventListener("click", function(){
 })
 
 
-MAIL
+// MAIL
 
--Creo un array con una lista di circa 4 mail diverse
--Chiedo tramite un input email, l'indirizzo email dell'utente
--Creo un a come button e un pre come output dove apparirà il risultato
--Richiamo il valore dell'input come un elemento di una variabile
--Richiamo l'elemento a.btn
+// -Creo un array con una lista di circa 4 mail diverse
+// -Chiedo tramite un input email, l'indirizzo email dell'utente
+// -Creo un a come button e un pre come output dove apparirà il risultato
+// -Richiamo il valore dell'input come un elemento di una variabile
+// -Richiamo l'elemento a.btn
 
-Quando l'utente clicca
--Creo un addEventListener dove:
-    -Se l'email è presente nell'array, allora dichiaro che può accedere;
-    -Se non è presente dichiaro che non può accedere;
+// Quando l'utente clicca
+// -Creo un addEventListener dove:
+//     -Se l'email è presente nell'array, allora dichiaro che può accedere;
+//     -Se non è presente dichiaro che non può accedere;
+
+let emailList = [
+    "Pippo.thePidgeon@gmail.com", "Loki.GodofAsgard@hotmail.it", "Vold.è.Mort@libero.it", "Chisei.Gokunonlosai@sayan.com"
+]
