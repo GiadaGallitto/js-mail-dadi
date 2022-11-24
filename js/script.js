@@ -1,27 +1,10 @@
-// GIOCO DEI DADI
-
-// -Devo generare un numero randomico per il computer
-// -Devo generare un numero randomico per il  giocatore tramite un "button"
-
-// Queste generazioni di numeri randomici devono avvenire nel momento in cui l'utente giocatore preme il pulsante
-// (quindi all'interno di un addEvenListener)
-
-// Quando cliccherà il pulsante, mostrerò il numero random generato per il computer e quello random per il giocatore
-
-// Sempre all'interno dell'evento, verranno inseriti due if, in cui:
-
-// -se il valore del numero del computer è maggiore di quello del giocatore, apparirà un messaggio in cui dico che ho vinto io;
-
-// -se il valore del numero del computer è minore di quello del giocatore, apparirà un messaggio in cui dico che ha vinto lui;
-
-
 
 // GIOCO DEI DADI
 
 const buttonGame = document.querySelector("div.buttons-game .btn");
 
 buttonGame.addEventListener("click", function(){
-    const computerRandomNumber = parseInt(Math.floor(Math.random() * 6));
+    const computerRandomNumber = parseInt(Math.floor(Math.random() * 6) + 1);
 
     const userRandomNumber = parseInt(Math.floor(Math.random() * 6));
 
@@ -38,17 +21,6 @@ buttonGame.addEventListener("click", function(){
 
 
 // MAIL
-
-// -Creo un array con una lista di circa 4 mail diverse
-// -Chiedo tramite un input email, l'indirizzo email dell'utente
-// -Creo un a come button e un pre come output dove apparirà il risultato
-// -Richiamo il valore dell'input come un elemento di una variabile
-// -Richiamo l'elemento a.btn
-
-// Quando l'utente clicca
-// -Creo un addEventListener dove:
-//     -Se l'email è presente nell'array, allora dichiaro che può accedere;
-//     -Se non è presente dichiaro che non può accedere;
 
 let emailList = [
     "Pippo.thePidgeon@gmail.com", "Loki.GodofAsgard@hotmail.it", "Vold.è.Mort@libero.it", "Chisei.Gokunonlosai@sayan.com"
@@ -70,11 +42,11 @@ buttonValidator.addEventListener(`click`, function(){
     }
 
     if (founded){
-        console.log (`email trovata`)
-        document.getElementById("output-mail").innerHTML = "Il tuo indirizzo email è corretto!"
+        console.log (`email trovata`);
+        document.getElementById("output-mail").innerHTML = "Il tuo indirizzo email è corretto!";
     } else {
-        console.log (`email non trovata`)
-        document.getElementById("output-mail").innerHTML = "Il tuo indirizzo email non è presente nella nostra lista"
+        console.log (`email non trovata`);
+        document.getElementById("output-mail").innerHTML = "Il tuo indirizzo email non è presente nella nostra lista";
     }
 
 })
